@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  postgres_a:
+    image: postgres:latest
+    container_name: postgres_a
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: banco_a
+    volumes:
+      - pgdata_a:/var/lib/postgresql/data
+
+  postgres_b:
+    image: postgres:latest
+    container_name: postgres_b
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: banco_b
+    volumes:
+      - pgdata_b:/var/lib/postgresql/data
+
+volumes:
+  pgdata_a:
+  pgdata_b:
