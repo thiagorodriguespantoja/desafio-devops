@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   postgres_a:
     image: postgres:latest
@@ -74,5 +72,6 @@ volumes:
   pgdata_a:
   pgdata_b:
   grafana-storage:
+
 
 
