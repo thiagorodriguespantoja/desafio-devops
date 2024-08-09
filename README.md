@@ -74,3 +74,4 @@ Este desafio técnico tem como objetivo avaliar a competência técnica do candi
 - Entregue o desafio mesmo que ainda não tenha concluído.
 
 
+# desafio-devops
